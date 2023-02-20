@@ -2,11 +2,13 @@
 
 public class Employee:IPerson
 {
+    public Employee()
+    {}
     public Employee(string firstName, string lastName, int employeeId = 0)
     {
         FirstName = firstName;
         LastName = lastName;
-        Id = EmployeeId;
+        EmployeeId = employeeId;
     }
     public string FirstName { get; set; }
     public string LastName { get; set; }

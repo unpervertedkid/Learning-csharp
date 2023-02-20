@@ -4,8 +4,15 @@ class Program
 {
     static void Main(string[] args)
     {
-        Employee employee = new Employee("John", "Doe");
-        Console.WriteLine($"Hello {employee.FirstName} {employee.LastName}!");
+        Employee employee = new Employee("John", "Doe")
+        {
+            Age = new Age(new DateTime(2001,10,1)),
+            Id = 1,
+            StartDate = new DateOnly(2021, 10, 1),
+            ShiftStartTime = new TimeOnly(8, 0, 0)
+        };
+        
+        Console.WriteLine($"Employee {employee.FirstName} {employee.LastName} started working on {employee.StartDate} and his/her shift starts at {employee.ShiftStartTime}.");
     }
 }
 
