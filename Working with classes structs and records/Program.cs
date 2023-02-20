@@ -1,3 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿namespace Working_with_classes_structs_and_records;
 
-Console.WriteLine("Hello, World!");
+class Program
+{
+    static void Main(string[] args)
+    {
+        Employee employee = new Employee("John", "Doe");
+        Console.WriteLine($"Hello {employee.FirstName} {employee.LastName}!");
+    }
+}
+
