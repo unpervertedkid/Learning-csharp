@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Working with classes struct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Equality Comparison in types", "Equality Comparison in types\Equality Comparison in types.csproj", "{442D5C59-E067-4A4C-BB6E-E8526C1ACA0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstract classes", "Abstract classes\Abstract classes.csproj", "{B46C606B-759E-492D-B98D-C55119E65F4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{442D5C59-E067-4A4C-BB6E-E8526C1ACA0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{442D5C59-E067-4A4C-BB6E-E8526C1ACA0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{442D5C59-E067-4A4C-BB6E-E8526C1ACA0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B46C606B-759E-492D-B98D-C55119E65F4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B46C606B-759E-492D-B98D-C55119E65F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B46C606B-759E-492D-B98D-C55119E65F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B46C606B-759E-492D-B98D-C55119E65F4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
