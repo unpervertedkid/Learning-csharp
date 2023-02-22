@@ -1,6 +1,6 @@
 ﻿namespace Working_with_classes_structs_and_records;
 
-public class Manager:Employee,IPerson
+public class Manager:Employee
 {
     public Manager()
     {}
@@ -10,7 +10,7 @@ public class Manager:Employee,IPerson
     public int NumberOfDirectReports { get; private set; }
     public int Level { get; init; }
     
-    public void setNumberOfDirectReports(int numberOfDirectReports)
+    public void SetNumberOfDirectReports(int numberOfDirectReports)
     {
         NumberOfDirectReports = numberOfDirectReports;
     }

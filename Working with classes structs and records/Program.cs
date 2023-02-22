@@ -26,7 +26,7 @@ class Program
         };
         
         Console.WriteLine($"Manager {level2Manager.FirstName} {level2Manager.LastName}, level:{level2Manager.Level} started working on {level2Manager.StartDate} and his/her shift starts at {level2Manager.ShiftStartTime}.");
-        level2Manager.setNumberOfDirectReports(27);
+        level2Manager.SetNumberOfDirectReports(27);
         Console.WriteLine($"Manager {level2Manager.FirstName} {level2Manager.LastName} has {level2Manager.NumberOfDirectReports} direct reports.");
     }
 }
