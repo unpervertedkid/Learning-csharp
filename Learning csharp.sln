@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Equality Comparison in type
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstract classes", "Abstract classes\Abstract classes.csproj", "{B46C606B-759E-492D-B98D-C55119E65F4C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Static Classes", "Static Classes\Static Classes.csproj", "{C53843FA-B108-438F-A500-C42CFC3142B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{B46C606B-759E-492D-B98D-C55119E65F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B46C606B-759E-492D-B98D-C55119E65F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B46C606B-759E-492D-B98D-C55119E65F4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C53843FA-B108-438F-A500-C42CFC3142B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C53843FA-B108-438F-A500-C42CFC3142B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C53843FA-B108-438F-A500-C42CFC3142B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C53843FA-B108-438F-A500-C42CFC3142B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
