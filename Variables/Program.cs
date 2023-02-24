@@ -16,7 +16,10 @@ public class Program
         var undefinedAccount = new { FirstName = "Ilhan", SecondName = "Okeyo", AccountType = "Undefined" };
         Console.WriteLine(
             $"Account for user: {undefinedAccount.FirstName + " " + undefinedAccount.SecondName} is {undefinedAccount.AccountType}.");
+
+        dynamic borrowingAccount = new CheckingAccount("Ilhan","Okeyo",200)
+            {OverdrawFine = 20};
         
-        
+        Console.WriteLine($"Account for user: {undefinedAccount.FirstName + " " + undefinedAccount.SecondName} is undefined.");
     }
 }
