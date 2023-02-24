@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstract classes", "Abstrac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Static Classes", "Static Classes\Static Classes.csproj", "{C53843FA-B108-438F-A500-C42CFC3142B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variables", "Variables\Variables.csproj", "{87E9B30B-178A-4956-9529-DCAF7A0756A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{C53843FA-B108-438F-A500-C42CFC3142B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C53843FA-B108-438F-A500-C42CFC3142B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C53843FA-B108-438F-A500-C42CFC3142B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87E9B30B-178A-4956-9529-DCAF7A0756A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E9B30B-178A-4956-9529-DCAF7A0756A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87E9B30B-178A-4956-9529-DCAF7A0756A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87E9B30B-178A-4956-9529-DCAF7A0756A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
