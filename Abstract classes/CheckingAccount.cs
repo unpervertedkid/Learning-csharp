@@ -2,9 +2,10 @@
 
 public class CheckingAccount:Account
 {
-    private const decimal OVERDRAW_FINE = 10.0m;
+    public  decimal OverdrawFine { get; set; }
     public CheckingAccount(string firstName, string secondName, decimal initialBalance) : base(firstName, secondName, initialBalance)
     {
+        OverdrawFine = 10.0m;
     }
 
     public override void Withdraw(decimal amount)
@@ -12,7 +13,7 @@ public class CheckingAccount:Account
         if (Balance < amount)
         {
           DecrementBalance(amount);
-          DecrementBalance(OVERDRAW_FINE);
+          DecrementBalance(OverdrawFine);
         }
         else
         {
