@@ -1,5 +1,5 @@
 ﻿namespace Working_with_classes_structs_and_records;
-
+[Flags]
 public enum ShiftDays
 {
     Sunday = 1,
@@ -8,6 +8,8 @@ public enum ShiftDays
     Wednesday = 8,
     Thursday = 16,
     Friday = 32,
-    Saturday = 64
+    Weekdays = 63,
+    Saturday = 64,
+    Weekend = 65
     
 }
