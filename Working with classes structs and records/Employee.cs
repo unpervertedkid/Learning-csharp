@@ -14,7 +14,7 @@ public class Employee:IPerson
     public string LastName { get; set; }
     public int Id { get; set; }
     public Age Age { get; set; }
-    public ShiftDays DaysAvailable { get; set; }
+    
     
     public int EmployeeId { get; set; }
     public DateOnly StartDate { get; set; }
