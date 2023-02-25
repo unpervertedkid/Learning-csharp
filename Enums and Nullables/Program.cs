@@ -5,11 +5,11 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        Employee mondayShiftEmployee = new Employee("John", "Metone", 56)
+        ShiftEmployee shiftEmployee = new ShiftEmployee("John", "Metone", 56)
         {
-            DaysAvailable = ShiftDays.Monday
+            DaysAvailable = ShiftDays.Weekdays | ShiftDays.Weekend
         };
 
-        Console.WriteLine($"Employee: {mondayShiftEmployee.FirstName + " " + mondayShiftEmployee.LastName} works on {mondayShiftEmployee.DaysAvailable}."); 
+        Console.WriteLine($"Employee: {shiftEmployee.FirstName + " " + shiftEmployee.LastName} works on {shiftEmployee.DaysAvailable}."); 
     }
 }
