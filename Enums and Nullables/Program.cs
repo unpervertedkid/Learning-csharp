@@ -5,11 +5,36 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        ShiftEmployee shiftEmployee = new ShiftEmployee("John", "Metone", 56)
+        var shiftDayAvailable = Enum.GetNames(typeof(ShiftDays));
+        Console.WriteLine($"The shift days available are: {String.Join(',',shiftDayAvailable)}.");
+        
+        ShiftEmployee shiftEmployee1 = new ShiftEmployee("John", "Metone", 56)
         {
             DaysAvailable = ShiftDays.Weekdays | ShiftDays.Weekend
         };
+        ShiftEmployee shiftEmployee2 = new ShiftEmployee("Lucy", "Celina")
+        {
+            DaysAvailable = ShiftDays.Weekend
+        };
+        ShiftEmployee shiftEmployee3 = new ShiftEmployee("Sebastian", "Christian");
+        
 
-        Console.WriteLine($"Employee: {shiftEmployee.FirstName + " " + shiftEmployee.LastName} works on {shiftEmployee.DaysAvailable}."); 
+        ShiftEmployee[] shiftEmployees = {shiftEmployee1,shiftEmployee2,shiftEmployee3 }; 
+        
+        foreach (ShiftEmployee shiftEmployee in shiftEmployees)
+        {
+            if (shiftEmployee.DaysAvailable.HasFlag(ShiftDays.Weekdays) &
+                shiftEmployee.DaysAvailable.HasFlag(ShiftDays.Weekend))
+            {
+                Console.WriteLine($"Employee: {shiftEmployee.FirstName + " " + shiftEmployee.LastName} is a full time worker.");
+            }
+            else
+            {
+                Console.WriteLine($"Employee: {shiftEmployee.FirstName + " " + shiftEmployee.LastName} is not a full time worker.");
+            }
+
+            Console.WriteLine($"The employee works on: {shiftEmployee.DaysAvailable}");
+        }
+
     }
 }
