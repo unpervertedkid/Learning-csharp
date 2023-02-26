@@ -4,7 +4,7 @@ public class Manager:Employee
 {
     public Manager()
     {}
-    public Manager(string firstName, string lastName) : base(firstName, lastName)
+    public Manager(string? firstName, string? lastName) : base(firstName, lastName)
     {}
     
     public int NumberOfDirectReports { get; private set; }

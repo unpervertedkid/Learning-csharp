@@ -4,14 +4,14 @@ public class Employee:IPerson
 {
     public Employee()
     {}
-    public Employee(string firstName, string lastName, int employeeId = 0)
+    public Employee(string? firstName, string? lastName, int employeeId = 0)
     {
         FirstName = firstName;
         LastName = lastName;
         EmployeeId = employeeId;
     }
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
+    public string? FirstName { get; set; }
+    public string? LastName { get; set; }
     public int Id { get; set; }
     public Age Age { get; set; }
     
