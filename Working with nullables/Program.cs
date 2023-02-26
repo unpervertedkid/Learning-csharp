@@ -16,5 +16,10 @@ public class Program
         {
             Console.WriteLine($"Age is {age}");
         }
+
+        if (age.HasValue)
+        {
+            Console.WriteLine($"Age is {age.Value}");
+        }
     }
 }
