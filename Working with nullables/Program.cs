@@ -1,10 +1,12 @@
-﻿namespace Working_with_nullables;
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace Working_with_nullables;
 
 public class Program
 {
     public static void Main(string[] args)
     {
-        string name = null;
+        string? name = null;
         int? age = null;
 
         int definitiveInt = age ?? 17;
@@ -31,5 +33,20 @@ public class Program
         {
             Console.WriteLine($"Age is {age.Value}");
         }
+
+        Console.WriteLine(TrimAndPad(name,20,'-'));
+    }
+
+    private static string TrimAndPad([AllowNull] string input, int length, char padChar)
+    {
+        if (input == null)
+        {
+            return String.Empty.PadLeft(length, padChar);
+        }
+        else
+        {
+            return input.Trim().PadLeft(length, padChar);
+        }
+         
     }
 }
