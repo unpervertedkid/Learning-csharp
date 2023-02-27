@@ -1,4 +1,6 @@
-﻿namespace Working_with_classes_structs_and_records;
+﻿using System.ComponentModel;
+
+namespace Working_with_classes_structs_and_records;
 
 class Program
 {
@@ -28,6 +30,21 @@ class Program
         Console.WriteLine($"Manager {level2Manager.FirstName} {level2Manager.LastName}, level:{level2Manager.Level} started working on {level2Manager.StartDate} and his/her shift starts at {level2Manager.ShiftStartTime}.");
         level2Manager.SetNumberOfDirectReports(27);
         Console.WriteLine($"Manager {level2Manager.FirstName} {level2Manager.LastName} has {level2Manager.NumberOfDirectReports} direct reports.");
+        
+        static ShiftDays GetShiftDays(DayOfWeek day) => day switch
+        {
+            DayOfWeek.Monday => ShiftDays.Monday,
+            DayOfWeek.Tuesday => ShiftDays.Tuesday,
+            DayOfWeek.Wednesday => ShiftDays.Wednesday,
+            DayOfWeek.Thursday => ShiftDays.Thursday,
+            DayOfWeek.Friday => ShiftDays.Friday,
+            DayOfWeek.Saturday => ShiftDays.Saturday,
+            DayOfWeek.Sunday => ShiftDays.Sunday,
+            _ => throw new InvalidEnumArgumentException("Invalid day provided!")
+        };
+
+        ShiftDays shiftDay = GetShiftDays(DateTime.Now.DayOfWeek);
+        Console.WriteLine(shiftDay);
     }
 }
 
