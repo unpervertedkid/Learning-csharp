@@ -43,9 +43,24 @@ public class Program
         {
             return String.Empty.PadLeft(length, padChar);
         }
+        else if(input != null && input.Length < length)
+        {
+            switch (padChar)
+            {
+                case '-':
+                    return input.Trim().PadLeft(length, padChar);
+                
+                case '0':
+                    return input.Trim().PadRight(length, padChar);
+                
+                default:
+                    return input.Trim().PadLeft(length, padChar);
+            }
+            
+        }
         else
         {
-            return input.Trim().PadLeft(length, padChar);
+            return input;
         }
          
     }
