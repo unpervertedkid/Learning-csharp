@@ -45,6 +45,29 @@ class Program
 
         ShiftDays shiftDay = GetShiftDays(DateTime.Now.DayOfWeek);
         Console.WriteLine(shiftDay);
+        
+        //Using the is expression
+        IPerson shiftWorker = new ShiftEmployee("Ilhan", "Marti") { StartDate = new DateOnly(2017, 09, 27) };
+        IPerson manager = new Manager("John", "Baraza"){Level = 3};
+
+        Console.WriteLine(GetEmployeeDetails(shiftWorker));        
+        Console.WriteLine(GetEmployeeDetails(manager));        
+    }
+
+    static string GetEmployeeDetails(IPerson person)
+    {
+        if (person is ShiftEmployee shiftEmployee)
+        {
+            return ($"{shiftEmployee.FirstName + " " + shiftEmployee.LastName} start date: {shiftEmployee.StartDate}");
+        }
+        else if (person is Manager manager)
+        {
+            return ($"{manager.FirstName + " " + manager.LastName} is a level {manager.Level} manager.");  
+        }
+        else
+        {
+            return string.Empty;
+        }
     }
 }
 
