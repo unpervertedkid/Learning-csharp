@@ -10,10 +10,41 @@ public class ShoppingCartManager
     }
     public AddToCartResponse AddToCart(AddToCartRequest request)
     {
-        _shoppingCart.Add(request.Item);
+        if (ContainsItem(_shoppingCart,request.Item))
+        {
+            updateItemQuantity(request.Item);
+        }
+        else
+        {
+            _shoppingCart.Add(request.Item);
+        }
         return new AddToCartResponse()
         {
             Items = _shoppingCart.ToArray()
         };
+    }
+
+    private bool ContainsItem(List<AddToCartItem> shoppingCart, AddToCartItem item)
+    {
+        foreach (var shoppingCartItem in _shoppingCart)
+        {
+            if (shoppingCartItem.ArticleId.Equals(item.ArticleId))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private void updateItemQuantity(AddToCartItem item)
+    {
+        foreach (var itemInCart in _shoppingCart)
+        {
+            if (itemInCart.ArticleId.Equals(item.ArticleId))
+            {
+                itemInCart.Quantity += item.Quantity;
+            } 
+        }
     }
 }
