@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Types and flow control", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Working with nullables", "Working with nullables\Working with nullables.csproj", "{6BDCA1B0-1900-44F2-BC7C-CF94CAA308E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test driven development", "Test driven development\Test driven development.csproj", "{7DEF730A-3336-48A1-AFA8-26386FC22CD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +58,10 @@ Global
 		{6BDCA1B0-1900-44F2-BC7C-CF94CAA308E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BDCA1B0-1900-44F2-BC7C-CF94CAA308E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BDCA1B0-1900-44F2-BC7C-CF94CAA308E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DEF730A-3336-48A1-AFA8-26386FC22CD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DEF730A-3336-48A1-AFA8-26386FC22CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DEF730A-3336-48A1-AFA8-26386FC22CD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DEF730A-3336-48A1-AFA8-26386FC22CD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{54CEDFAA-2E66-41B3-98DA-C5625EC6AB37} = {E1E7E466-48B8-4207-B3C7-A44F1D7206B1}
