@@ -2,8 +2,8 @@
 
 public class ShoppingCartTests
 {
-    [Setup]
-    public void setup()
+    [SetUp]
+    public void Setup()
     {
         
     }
@@ -27,7 +27,7 @@ public class ShoppingCartTests
         AddToCartResponse response = manager.AddToCart(request);
 
         Assert.NotNull(response);
-        Assert.Contains(item, response);
+        Assert.Contains(item, response.Items);
 
     }
     
@@ -52,7 +52,7 @@ public class ShoppingCartTests
 
         var request2 = new AddToCartRequest()
         {
-            Item = item2;
+            Item = item2
         };
 
         var manager = new ShoppingCartManager();
