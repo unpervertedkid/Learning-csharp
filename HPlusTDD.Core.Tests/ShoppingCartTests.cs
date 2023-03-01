@@ -94,6 +94,6 @@ public class ShoppingCartTests
         var response = manager.AddToCart(request1);
         response = manager.AddToCart(request2);
 
-        Assert.That(response.Items[0].Quantity == 15);
+        Assert.That(Array.Exists(response.Items,item => item.ArticleId == 20 && item.Quantity == 15));
     }
 }
